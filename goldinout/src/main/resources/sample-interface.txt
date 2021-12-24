@@ -1,0 +1,3 @@
+Sites;INTSITE;SOF;Incoming interface table for site and customer general data;psifa01p;11/08/20 1;
+Customers;INTSITE;SOF;Incoming interface table for site and customer general data;psifa01p;11/08/20 1;
+Customer Address;INTCLIFILI;CLF;Incoming interface table for customer address and address chain;psifa02p; DATE MODE;

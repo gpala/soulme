@@ -14,24 +14,24 @@ import com.example.soulme.models.Truth;
 import com.example.soulme.repositories.TruthRepository;
 
 @RestController
-@RequestMapping("/api/truth/v1")
+@RequestMapping("/api/v1")
 public class TruthController {
 	
 	@Autowired
 	private TruthRepository truthService;
 	
-	@GetMapping
+	@GetMapping("/truths")
 	public List<Truth> getAllTruths(){
 		
 		return truthService.findAll();	
 	}
 	
-	@PostMapping
+	@PostMapping("/truths")
 	public void addTruth( @RequestBody Truth newTruth) {
 		truthService.save(newTruth);
 	}
 	
-	@PutMapping
+	@PutMapping("/truths")
 	public void updateTruth( @RequestBody Truth newTruth) {
 		
 	
